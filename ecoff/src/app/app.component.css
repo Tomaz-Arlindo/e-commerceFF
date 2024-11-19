@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Reenie+Beanie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    background-color: #5a5a5a;
+    font-family: "Faculty Glyphic", sans-serif;
+    color: #fff;
+}
+
+header {
+    height: 100px;
+    margin: 0 !important;
+    background-color: #f9cf01;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 90px;
+    padding-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+    color: #333333;
+    background-color: #FFD700;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 0px 20px;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #b69b01;
+}
