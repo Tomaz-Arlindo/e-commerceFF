@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Reenie+Beanie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Reenie+Beanie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
     margin: 0;
     background-color: #5a5a5a;
-    font-family: "Faculty Glyphic", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
     color: #fff;
 }
 
@@ -13,28 +14,49 @@ header {
     background-color: #f9cf01;
     display: flex;
     align-items: center;
+    padding-left: 20px;
 }
 
 header img {
     height: 90px;
-    padding-left: 20px;
 }
 
-nav a {
+main {
+    margin: 20px 50px;
+}
+
+.navbar {
+    display: flex;
+    flex: 1; /* Faz a navbar ocupar o espaço restante */
+    align-items: center;
+    margin-left: 30px;
+}
+
+.navbar .nav-bt {
     text-decoration: none;
-    width: 150px;
+    width: 180px;
+    height: 100px;
+    line-height: 60px;
     text-align: center;
-    color: #333333;
-    background-color: #FFD700;
-    padding: 15px;
-    font-size: 20px;
-    border-radius: 5px;
-    margin: 0px 20px;
-    transition: background-color 0.3s ease;
-    transition: color 0.3s ease;
+    color: #202a73;
+    font-size: 22px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
-nav a:hover {
+.navbar .nav-bt:hover {
     color: #fff;
     background-color: #b69b01;
+}
+
+.navbar span {
+    font-size: 35px;
+    line-height: 60px;
+}
+
+.cart {
+    margin-left: auto; /* Empurra o carrinho para o lado direito */
+    width: 120px !important;
 }

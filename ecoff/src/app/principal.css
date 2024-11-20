@@ -1,0 +1,26 @@
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.produto {
+    height: 300px;
+    width: 200px;
+    margin: 10px 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #707070;
+    transition: background-color 0.5s ease, color 0.5s ease, border-radius 0.5s ease;
+}
+
+.produto:hover {
+    background-color: #909090;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.produto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
