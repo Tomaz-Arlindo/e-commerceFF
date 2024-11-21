@@ -1,8 +1,31 @@
 <div class="topo">
-    <h1>Nos dê uma nota de acordo com sua experiência!</h1>
-    <p>5 estrelas por favor :)</p>
+    <h1>Nos dê uma nota de acordo com a sua experiência!</h1>
+    <p>5 estrelas, por favor :)</p>
 </div>
 
 <main>
     <!-- Conteúdo principal -->
+    <div class="rating">
+        <span class="star" [class.filled]="rating >= 1" (mouseover)="hover(1)" (mouseleave)="reset()"
+            (click)="setRating(1)">&#9733;</span>
+        <span class="star" [class.filled]="rating >= 2" (mouseover)="hover(2)" (mouseleave)="reset()"
+            (click)="setRating(2)">&#9733;</span>
+        <span class="star" [class.filled]="rating >= 3" (mouseover)="hover(3)" (mouseleave)="reset()"
+            (click)="setRating(3)">&#9733;</span>
+        <span class="star" [class.filled]="rating >= 4" (mouseover)="hover(4)" (mouseleave)="reset()"
+            (click)="setRating(4)">&#9733;</span>
+        <span class="star" [class.filled]="rating >= 5" (mouseover)="hover(5)" (mouseleave)="reset()"
+            (click)="setRating(5)">&#9733;</span>
+    </div>
+
+    <p class="topo">Classificação: {{ rating }} estrela(s)</p>
+
+    <div class="form-container">
+        <form class="opinion-form">
+            <textarea id="opinion" name="opinion" rows="4" placeholder="Digite aqui sua opinião..."></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
+
 </main>

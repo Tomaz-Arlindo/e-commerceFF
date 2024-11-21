@@ -5,3 +5,36 @@ body {
     font-weight: 700;
     color: #fff;
 }
+
+/* Garantindo que a página ocupe a altura total */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Contêiner principal */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Força a página a ter no mínimo a altura da janela */
+  }
+  
+  /* O conteúdo principal expande para preencher o espaço disponível */
+  main {
+    flex: 1; /* Faz o conteúdo ocupar o espaço restante */
+    padding: 20px; /* Opcional: adiciona espaço interno */
+  }
+  
+  /* Footer sempre na base */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  footer p {
+    font-weight: 400;
+    font-size: 13px;
+}

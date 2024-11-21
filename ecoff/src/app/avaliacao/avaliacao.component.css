@@ -1,0 +1,76 @@
+.topo {
+    text-align: center;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.star {
+    font-size: 80px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.star.filled {
+    color: #f9cf01;
+}
+
+.star:hover {
+    color: #f9cf01;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.opinion-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza checkbox e botão */
+    gap: 15px;
+    width: 100%;
+}
+
+textarea {
+    resize: both;
+    min-width: 380px;
+    max-width: 380px;
+    min-height: 60px;
+    height: 60px;
+    max-height: 380px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: border-color 0.5s ease;
+}
+
+textarea:focus {
+    border-color: #f9cf01;
+    outline: none;
+}
+
+button {
+    width: 400px;
+    padding: 20px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f9cf01;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b69b01;
+}

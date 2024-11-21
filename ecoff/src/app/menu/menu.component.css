@@ -13,13 +13,13 @@
     margin: 10px 20px;
     padding: 20px;
     border-radius: 5px;
-    background-color: #707070;
+    background-color: #444444;
     transition: background-color 0.5s ease, color 0.5s ease, border-radius 0.5s ease;
 }
 
 .produto:hover {
-    background-color: #909090;
-    border-radius: 10px;
+    background-color: #333;
+    border-radius: 15px;
     cursor: pointer;
 }
 
