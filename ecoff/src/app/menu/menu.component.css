@@ -1,7 +1,11 @@
+.topo {
+    text-align: center;
+}
+
 .catalogo {
     display: flex;
     flex-wrap: wrap;
-  }
+}
 
 .produto {
     height: 300px;
