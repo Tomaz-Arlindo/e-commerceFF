@@ -1,0 +1,14 @@
+.topo {
+    text-align: center;
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 93px 430px;
+    font-size: 20px;
+    background-color: #202a73;
+    padding: 30px;
+    border-radius: 10px;
+}

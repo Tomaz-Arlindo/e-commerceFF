@@ -1,0 +1,67 @@
+.topo {
+    text-align: center;
+}
+
+.pedido {
+    display: inline-block;
+    width: 100%;
+}
+
+.produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #333;
+    margin: 20px 400px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.produto img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.produto span {
+    border: 3px red solid;
+    border-radius: 5px;
+    padding: 3px;
+    color: red;
+    transition: background-color 0.2s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.produto span:hover {
+    color: white;
+    background-color: red;
+}
+
+.fin-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 95px 0px;
+}
+
+.finalizar {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f9cf01;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+.finalizar:hover {
+    background-color: #b69b01;
+}

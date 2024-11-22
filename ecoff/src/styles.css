@@ -22,7 +22,6 @@ html, body {
   /* O conteúdo principal expande para preencher o espaço disponível */
   main {
     flex: 1; /* Faz o conteúdo ocupar o espaço restante */
-    padding: 20px; /* Opcional: adiciona espaço interno */
   }
   
   /* Footer sempre na base */
