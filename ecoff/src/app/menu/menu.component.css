@@ -5,6 +5,7 @@
 .catalogo {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .produto {
@@ -27,4 +28,13 @@
     width: 200px;
     height: 200px;
     border-radius: 5px;
+}
+
+.carregando {
+    text-align: center;
+    background-color: rgb(138, 212, 27);
+    color: #202a73;
+    margin: 170px 500px;
+    padding: 10px;
+    border-radius: 10px;
 }

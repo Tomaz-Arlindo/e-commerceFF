@@ -2,24 +2,19 @@
     <h1>Carrinho</h1>
 </div>
 
-<main class="pedido">
-
-    <!-- Unidade de produto -->
-    <div class="produto">
-        <img src="../assets/produto-1.webp" alt="">
-        <h4>Caneca verde</h4>
-        <h4>R$30,00</h4>
-        <span class="material-symbols-outlined">
-            delete
-        </span>
+<div class="pedido" *ngIf="cartItems.length > 0; else emptyCart">
+    <ul>
+        <li *ngFor="let item of cartItems" class="produto">
+            <img [src]="item.image" alt="{{ item.title }}" />
+            <h4>{{ item.title }}</h4>
+            <p>{{ item.price | currency:'BRL' }}</p>
+        </li>
+    </ul>
+    <div class="mod-fin">
+        <button (click)="clearCart()" class="finalizar">Finalizar</button>
     </div>
+</div>
 
-    <div class="fin-div">
-        <button class="finalizar">
-            Finalizar
-            <span class="material-symbols-outlined">
-                shopping_cart_checkout
-            </span>
-        </button>
-    </div>
-</main>
+<ng-template #emptyCart>
+    <h1 class="alerta">O carrinho está vazio!</h1>
+</ng-template>
