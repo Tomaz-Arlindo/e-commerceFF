@@ -1,25 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ProductService } from '../services/product.service';
-import { CartService } from '../services/cart.service'; // Novo serviço para o carrinho
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css'],
 })
-export class MenuComponent implements OnInit {
-  products: any[] = [];
+export class MenuComponent {
+  products$ = this.productService.getProducts(); // Usa o observable diretamente
 
   constructor(
     private productService: ProductService,
-    private cartService: CartService // Injeta o serviço de carrinho
-  ) { }
-
-  ngOnInit() {
-    this.productService.getProducts().subscribe((data) => {
-      this.products = data;
-    });
-  }
+    private cartService: CartService
+  ) {}
 
   addToCart(product: any) {
     this.cartService.addProduct(product); // Adiciona o produto ao carrinho

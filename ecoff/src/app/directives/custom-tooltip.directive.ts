@@ -10,7 +10,7 @@ export class CustomTooltipDirective {
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
   @HostListener('mouseenter') onMouseEnter() {
-    if (!this.tooltipText) return; // Se não houver texto, não exibe o tooltip
+    if (!this.tooltipText) return;
 
     this.tooltipElement = this.renderer.createElement('span');
     this.renderer.setStyle(this.tooltipElement, 'position', 'absolute');

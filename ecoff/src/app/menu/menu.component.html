@@ -4,9 +4,9 @@
     <p>Escolha um de nossos produtos e coloque no carrinho, nunca iremos entregar :)</p>
 </div>
 
-<div class="catalogo" *ngIf="products && products.length > 0; else loading">
-    <div *ngFor="let product of products" class="produto" (click)="addToCart(product)" 
-    appCustomTooltip="Clique aqui para adicionar ao carrinho!" appLoadingIcon="true">
+<div class="catalogo" *ngIf="products$ | async as products; else loading">
+    <div *ngFor="let product of products" class="produto" (click)="addToCart(product)"
+        appCustomTooltip="Clique aqui para adicionar ao carrinho!" appLoadingIcon="true">
         <img [src]="product.image" alt="{{ product.title }}" />
         <h4>{{ product.title | truncate:35 }}</h4>
         <p>{{ product.price | currency:'BRL' }}</p>
@@ -14,5 +14,5 @@
 </div>
 
 <ng-template #loading>
-    <p class="carregando"  appLoadingIcon="true">Carregando produtos...</p>
+    <p class="carregando" appLoadingIcon="true">Carregando produtos...</p>
 </ng-template>

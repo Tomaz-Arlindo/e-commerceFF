@@ -18,7 +18,7 @@ export class LoadingIconDirective {
         this.renderer.setProperty(this.el.nativeElement, 'innerHTML', this.originalContent);
         this.renderer.removeClass(this.el.nativeElement, 'disabled');
         this.originalContent = null;
-      }, 2000); // Substitui por 2 segundos
+      }, 2000);
     }
   }
 }

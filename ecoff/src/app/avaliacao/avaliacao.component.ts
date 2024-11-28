@@ -6,20 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./avaliacao.component.css']
 })
 export class AvaliacaoComponent {
-  rating: number = 0; // Classificação atual
-  hoveredRating: number = 0; // Classificação temporária ao passar o mouse
+  rating: number = 0;
+  hoveredRating: number = 0;
 
-  // Define a avaliação final
+  // Avaliação final
   setRating(rating: number): void {
     this.rating = rating;
   }
 
-  // Atualiza a avaliação temporária ao passar o mouse
+  // Avaliação ao passar o mouse
   hover(rating: number): void {
     this.hoveredRating = rating;
   }
 
-  // Reseta a avaliação temporária ao sair do mouse
+  // Reseta a avaliação ao sair do mouse
   reset(): void {
     this.hoveredRating = 0;
   }
