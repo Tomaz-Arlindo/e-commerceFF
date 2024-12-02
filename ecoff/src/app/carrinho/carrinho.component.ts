@@ -19,4 +19,13 @@ export class CarrinhoComponent implements OnInit {
     this.cartService.clearCart(); // Limpa o carrinho
     this.cartItems = [];
   }
+
+  delete(number: any) {
+    let index = this.cartItems.findIndex(obj => obj.id === number);
+
+  // Se o índice for encontrado, remover o objeto
+  if (index !== -1) {
+    this.cartItems.splice(index, 1);
+  }
+  }
 }

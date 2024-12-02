@@ -8,6 +8,7 @@
             <img [src]="item.image" alt="{{ item.title }}" />
             <h4>{{ item.title }}</h4>
             <p>{{ item.price | currency:'BRL' }}</p>
+            <button (click)="delete(item.id)" class="finalizar">Remover do carrinho</button>
         </li>
     </ul>
     <div class="mod-fin">
