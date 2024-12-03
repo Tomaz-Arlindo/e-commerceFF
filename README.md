@@ -1,4 +1,4 @@
-<img src="ecoff/src/assets/ecoGen.png" alt="Logo do Site" width="400">
+<img src="src/assets/ecoGen.png" alt="Logo do Site" width="400">
 
 ## Descrição
 E-commerce Genérico é um projeto simples desenvolvido em Angular, com quatro telas principais totalmente funcionais. O objetivo é simular a interface de um e-commerce com opções de navegação entre diferentes seções.
